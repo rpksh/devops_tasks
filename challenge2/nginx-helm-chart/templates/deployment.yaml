@@ -52,22 +52,22 @@ spec:
             valueFrom:
               secretKeyRef:
                 name: aws_secrets
-                key: AWS_KEY_ID
+                key: aws_key_id
           - name: AWS_SECRET_KEY
             valueFrom:
               secretKeyRef:
                 name: aws_secrets
-                key: AWS_SECRET_KEY
+                key: aws_secret_key
           - name: S3_BUCKET_NAME
             valueFrom:
               secretKeyRef:
                 name: aws_secrets
-                key: S3_BUCKET_NAME
+                key: s3_bucket_name
           - name: S3_REGION
             valueFrom:
               secretKeyRef:
                 name: aws_secrets
-                key: S3_REGION
+                key: s3_region
           volumeMounts:
           - name: log-storage
             mountPath: /mnt/log

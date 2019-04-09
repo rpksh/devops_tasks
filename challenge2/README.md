@@ -18,7 +18,7 @@ buckets)
  - build from alpine:3.7 base image.
  - fluent is installed to the base image.
  - custom entrypoint script is copied.
- - entrypoint.sh check for the fluent configuration and stop the container on error.
+ - entrypoint.sh check for the fluent configuration and stop the container on configuration error.
  - fluent starts if there is no issue with the configuration.
 
 ## Helm chart details `nginx-helm-chart/`
