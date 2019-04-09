@@ -7,3 +7,9 @@ Input
  - AWS credentials should be provided to the controller via environment
  - Kubernetes manifest as shown below (extend the spec as needed)
 # Solution - (in-progress)
+# Approach 1 details
+ - Import the terraform golang packages
+ - create the bucket through the code.
+ - store the output `terraform.state` in one of the provisioned kubernetes object status fields after creating the bucket.
+ - Add a finalizer field to the object to wait for deletion of the bucket Content.
+ - when delete call is made,use the `terrafom.state` file to delete bucket from cloud.
