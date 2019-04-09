@@ -9,7 +9,7 @@ Notes
 buckets)
 
 # Solution
-## Docker image details `docker-images`:
+## Docker image details `docker-images/`:
 #### nginx image
  - build from nginx:1.15.10 base image.
  - copies content from the folder `static-html-directory` to `/usr/share/nginx/html`
@@ -21,7 +21,7 @@ buckets)
  - entrypoint.sh check for the fluent configuration and stop the container on error.
  - fluent starts if there is no issue with the configuration.
 
-## Helm chart details `nginx-helm-chart`
+## Helm chart details `nginx-helm-chart/`
 helm charts consists of two container.
 #### Application container
  - mount empty dir `log-storage` to the path ` /var/log/nginx`

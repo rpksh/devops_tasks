@@ -20,6 +20,6 @@ Notes
 
 ### Step to run from a docker
 1. build the docker images by running the following command
-docker build -t githubstats:1 -f Dockerfile .
+`docker build -t githubstats:1 -f Dockerfile .`
 2. execute the docker image by running the following command
-docker run -it githubstats:1
+`docker run -it githubstats:1`
